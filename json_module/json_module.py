@@ -8,7 +8,7 @@ data_from_json_string = json.loads(string_as_json)
 print(data_from_json_string)
 print()
 
-json_file = r"json_example.json"
+json_file = r"json_module/json_example.json"
 ######################### json.loads преобразует json файл в питоновский объект
 with open(json_file) as file:
     data_from_json_file = json.load(file)
@@ -24,5 +24,5 @@ print()
 
 dict_for_json_dump_to_file = {1: True, 2: False, 3: 'кошка', 4: None}
 ######################### json.dump преобразует питоновский объект в json файл
-with open("new_json_example", 'w') as file:
+with open("json_module/new_json_example", 'w') as file:
     json.dump(dict_for_json_dump_to_file, file)
