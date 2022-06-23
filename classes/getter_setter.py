@@ -31,6 +31,7 @@ class Player:
     # методы получения и изменения значения level маскируются под свойства класса через декораторы
 
     @classmethod
+    # досмотреть видео https://www.youtube.com/watch?v=H323khQJL40&t=914s
 
 player_1 = Player()
 print(player_1.level)
