@@ -1,8 +1,10 @@
+# задача и объяснение декораторов https://www.youtube.com/watch?v=Ss1M32pp5Ew
 import datetime
 
 
 def time_counter(function):
     """Считает время выполнения функции"""
+
     def wrapper(*args, **kwargs):
         start = datetime.datetime.now()
         result = function(*args, **kwargs)
