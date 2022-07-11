@@ -8,4 +8,3 @@ time.sleep(5) # усыпляет программу на определенно�
 time_2 = time.time()
 time_interval = time_2 - time_1
 print(time_interval)
-
