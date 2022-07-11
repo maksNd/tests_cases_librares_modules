@@ -15,7 +15,11 @@ class Person:
     name: str  # инициализатор будет сгенерирован декоратором
     address: str
     active: bool = True
+    skills: list = (1,2,3)
 
+    def __post_init__(self): # так можно изменить параметры, которые передаются при инициализации
+         self.skills = list(self.skills)
 
 user_1 = Person('Ivan', 'qwe 12/3')
 print(user_1)
+print(user_1.skills)
