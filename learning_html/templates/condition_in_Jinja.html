@@ -1,0 +1,8 @@
+<p>Your profile settings</p>
+{% if is_blocked %}
+    <p>Access denied</p>
+{% elif is_blocked == None %}
+    <p>Unknown access status</p>
+{% else %}
+    <p>Access is allowed</p>
+{% endif %}
