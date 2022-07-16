@@ -9,7 +9,8 @@ print(data_from_json_string)
 print()
 
 json_file = r"json_example.json"
-######################### json.loads преобразует json файл в питоновский объект
+######################### json.load преобразует json файл в питоновский объект
+######################### json.loads преобразует json строку в питоновский объект
 with open(json_file) as file:
     data_from_json_file = json.load(file)
 print(data_from_json_file)
