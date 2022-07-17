@@ -12,6 +12,12 @@ def using_Jinja():
     return render_template('Jinja.html', name=name, number=number)
 
 
+@app.route('/<int:pk>')
+def show_pk(pk):
+    """Роут с параметром"""
+    return str(pk)
+
+
 @app.route('/prf/')
 def dict_in_Jinja():
     user_data = {
@@ -37,4 +43,4 @@ def condition_in_Jinja():
     return render_template('condition_in_Jinja.html', is_blocked=is_blocked)
 
 
-app.run(host='127.0.0.1', port=8888)
+app.run(host='127.0.0.1', port=9999)
