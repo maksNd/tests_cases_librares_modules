@@ -7,6 +7,7 @@ class ArgumentEqualZeroError(Exception):
 
 
 def divide(a, b):
+    """Тестовая функция деления a на b c обработкой возможных ошибок"""
     if not isinstance(a, int | float) or not isinstance(b, int | float):
         raise ValueError("Аргументы должны быть числами")  # ValueError - ошибка переданного аргумента
 
