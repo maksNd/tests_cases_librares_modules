@@ -12,8 +12,8 @@ class Circle:
     def get_radius(self):
         return self.radius
 
-    def get_diametr(self):
+    def get_diameter(self):
         return self.radius * 2
 
-    def get_perimetr(self):
+    def get_perimeter(self):
         return 2 * pi * self.radius
