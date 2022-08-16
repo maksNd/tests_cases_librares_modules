@@ -40,6 +40,7 @@ def cycle_in_Jinja():
 @app.route('/acc/')
 def condition_in_Jinja():
     is_blocked = random.choice([True, False, None])
+    """Условия в jinja"""
     return render_template('condition_in_Jinja.html', is_blocked=is_blocked)
 
 
