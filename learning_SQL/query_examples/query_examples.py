@@ -103,12 +103,12 @@ query_11 = """
             """
 
 """query_12 - выведет количество тв шоу и фильмов в странах которых присутствует Индия"""
-query_12 = ("""
+query_12 = """
                 select type, count(title)
                 from netflix
                 where country like '%India%'
                 group by type
-                """)
+                """
 
 with sqlite3.connect('netflix.db') as connection:
     cursor = connection.cursor()
