@@ -23,7 +23,8 @@ def page_post_form():
 @app.route('/post_uploaded', methods=['POST'])
 def page_post_upload():
     picture = request.files.get("picture")
-    print(picture.filename)
+    picture.save(picture.filename)
     return picture.filename
+
 
 app.run(host='127.0.0.1', port=7777)
