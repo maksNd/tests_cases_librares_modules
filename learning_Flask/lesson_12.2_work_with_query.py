@@ -18,6 +18,7 @@ def search_page():
 
 @app.get('/filter')
 def filter_page():
+    """В запросе писать - /filter?from=10&to=20"""
     try:
         from_value = request.args['from']
         to_value = request.args['to']
