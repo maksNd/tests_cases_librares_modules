@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?time_continue=388&v=dKxiHlZvULQ&feature=emb_logo
+
+1. Что означает динамическая типизация в Python?
+    Это означает что тип переменной присваивается не в момент создания переменной а во время
+    присваивания значения этой переменной
+
+2.  def validate_user(user):        - сигнатура функции (описание ф-ии)
+        validate_user_on_server()   - реализация функции
+        check_username()            - реализация функции
